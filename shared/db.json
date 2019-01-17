@@ -1,0 +1,106 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "order": [],
+  "products": [
+    {
+      "id": 1,
+      "title": "Apple",
+      "image": "assets/products/Apple.png",
+      "description": "Apple",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "title": "Aubergines",
+      "image": "assets/products/Aubergines.png",
+      "description": "Aubergines",
+      "price": 60
+    },
+    {
+      "id": 3,
+      "title": "Banana",
+      "image": "assets/products/Banana.png",
+      "description": "Banana",
+      "price": 30
+    },
+    {
+      "id": 4,
+      "title": "Carrot",
+      "image": "assets/products/Carrot.png",
+      "description": "Carrot",
+      "price": 45
+    },
+    {
+      "id": 5,
+      "title": "Cheese",
+      "image": "assets/products/Cheese.png",
+      "description": "Cheese",
+      "price": 68
+    },
+    {
+      "id": 6,
+      "title": "Cucumber",
+      "image": "assets/products/Cucumber.png",
+      "description": "Egg",
+      "price": 123
+    },
+    {
+      "id": 7,
+      "title": "Egg",
+      "image": "assets/products/Egg.png",
+      "description": "Egg",
+      "price": 14
+    },
+    {
+      "id": 8,
+      "title": "Grape",
+      "image": "assets/products/Grape.png",
+      "description": "Grape",
+      "price": 20
+    },
+    {
+      "id": 9,
+      "title": "Mango",
+      "image": "assets/products/Mango.png",
+      "description": "Orange",
+      "price": 89
+    },
+    {
+      "id": 10,
+      "title": "Orange",
+      "image": "assets/products/Orange.png",
+      "description": "Orange",
+      "price": 52
+    },
+    {
+      "id": 11,
+      "title": "Potato",
+      "image": "assets/products/Potato.png",
+      "description": "Potato",
+      "price": 43
+    },
+    {
+      "id": 12,
+      "title": "Tomato",
+      "image": "assets/products/Tomato.png",
+      "description": "Tomato",
+      "price": 89
+    }
+  ]
+}
