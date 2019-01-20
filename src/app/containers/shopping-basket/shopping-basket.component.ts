@@ -12,9 +12,9 @@ import {Observable} from 'rxjs/index';
     <ng-container *ngIf="(total$ | async) as total">
         <ng-container *ngIf="total">
           <div class="input-group">
-            <button [routerLink]="['/products/shopping-card']" aria-describedby="addon" class="btn btn-default">Корзина <i class="text-warning glyphicon glyphicon-shopping-cart"></i></button>
+            <button [routerLink]="['/products/shopping-card']" aria-describedby="addon" class="btn btn-default">Shopping card <i class="text-warning glyphicon glyphicon-shopping-cart"></i></button>
 
-            <span class="input-group-addon" id="addon">Всего товаров <b>{{total}}</b></span>
+            <span class="input-group-addon" id="addon">All goods <b>{{total}}</b></span>
           </div>
         </ng-container>
     </ng-container>

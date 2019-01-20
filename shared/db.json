@@ -16,7 +16,43 @@
   "profile": {
     "name": "typicode"
   },
-  "order": [],
+  "order": [
+    {
+      "productId": 12,
+      "quantity": 2,
+      "id": 1
+    },
+    {
+      "productId": 7,
+      "quantity": 1,
+      "id": 5
+    },
+    {
+      "productId": 9,
+      "quantity": 1,
+      "id": 7
+    },
+    {
+      "productId": 5,
+      "quantity": 1,
+      "id": 9
+    },
+    {
+      "productId": 19,
+      "quantity": 1,
+      "id": 10
+    },
+    {
+      "productId": 15,
+      "quantity": 1,
+      "id": 11
+    },
+    {
+      "productId": 8,
+      "quantity": 1,
+      "id": 12
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -101,6 +137,62 @@
       "image": "assets/products/Tomato.png",
       "description": "Tomato",
       "price": 89
+    },
+    {
+      "id": 13,
+      "title": "Beetroot",
+      "image": "assets/products/beetroot.png",
+      "description": "Beetroot",
+      "price": 93
+    },
+    {
+      "id": 14,
+      "title": "Cabbage",
+      "image": "assets/products/cabbage.png",
+      "description": "",
+      "price": 15
+    },
+    {
+      "id": 15,
+      "title": "Papper",
+      "image": "assets/products/bulgarian_papper.png",
+      "description": "Bulgarian papper",
+      "price": 45
+    },
+    {
+      "id": 16,
+      "title": "Ginger",
+      "image": "assets/products/ginger.png",
+      "description": "Ginger",
+      "price": 74
+    },
+    {
+      "id": 17,
+      "title": "Melon",
+      "image": "assets/products/melon.png",
+      "description": "Melon",
+      "price": 42
+    },
+    {
+      "id": 18,
+      "title": "Onion",
+      "image": "assets/products/onion.png",
+      "description": "Onion",
+      "price": 85
+    },
+    {
+      "id": 19,
+      "title": "Zucchini",
+      "image": "assets/products/vegetable_marrow.png",
+      "description": "Vegetable Marrow",
+      "price": 78
+    },
+    {
+      "id": 20,
+      "title": "Watermelon",
+      "image": "assets/products/watermelon.png",
+      "description": "Watermelon",
+      "price": 65
     }
   ]
 }

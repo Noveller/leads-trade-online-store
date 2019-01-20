@@ -31,7 +31,7 @@ export class ProductsEffect {
       return this.product.getAll()
         .pipe(map((products: ProductModel[]) => {
 
-            this.notifier.notify('success', 'Products loaded.');
+            // this.notifier.notify('success', 'Products loaded.');
 
             return new fromProductActions.ProductLoadSuccessAction(products)
         }))
@@ -44,7 +44,7 @@ export class ProductsEffect {
     switchMap((data) => {
       // return new
 
-      this.notifier.notify('success', 'Products purchased.');
+      this.notifier.notify('success', 'Thank you for shopping.');
 
       return [
         new fromCardActions.CardRemoveAllAction(),

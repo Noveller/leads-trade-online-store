@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, OnInit, ViewChildren} from '@angular/core';
 import {ProductsService} from '../../../app/services/products.service';
 import {select, Store} from '@ngrx/store';
 
@@ -10,14 +10,14 @@ import {ProductModel} from '../../../app/store/models/ProductModel';
 import {Observable} from 'rxjs/index';
 import {OrderService} from '../../../app/services/order.service';
 import {CardModel} from '../../../app/store/models/CardModel';
+import {ProductItemComponent} from '../product-item/product-item.component';
 
 @Component({
   selector: 'app-products',
   template: `
       
     <div class="row">
-
-      <app-product-item 
+      <app-product-item
         *ngFor="let product of products$ | async" 
         [product]="product"
         (add_to_card)="onAddToCard($event)"
@@ -29,7 +29,8 @@ import {CardModel} from '../../../app/store/models/CardModel';
   styleUrls: ['./products.component.css']
 })
 
-export class ProductsComponent implements OnInit {
+export class ProductsComponent implements OnInit, AfterViewInit {
+
 
   public products$: Observable<ProductModel[]>;
 
@@ -58,6 +59,9 @@ export class ProductsComponent implements OnInit {
 
     this.products$ = this.store.pipe(select(fromProducts.selectAllProducts));
 
+  }
+
+  ngAfterViewInit() {
   }
 
 }

@@ -12,7 +12,7 @@ import {CardModel} from '../../../app/store/models/CardModel';
       <div class="thumbnail">
         <img [src]="product.image" [alt]="product.description">
         <div class="caption">
-          <h3 [innerHTML]="product.title"></h3>
+          <h4 [innerHTML]="product.title"></h4>
           <p><b>{{product.price}}$</b></p>
           <p [innerHTML]="product.description"></p>
       
