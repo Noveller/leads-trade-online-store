@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "concurrently \"node shared/server.js\" \"ng serve\"",
+    "json_server": "node shared/server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -25,8 +26,9 @@
     "@ngrx/effects": "^6.1.2",
     "@ngrx/entity": "^6.1.2",
     "@ngrx/router-store": "^6.1.2",
-    "@ngrx/store-devtools": "^6.1.2",
     "@ngrx/store": "^6.1.2",
+    "@ngrx/store-devtools": "^6.1.2",
+    "angular-notifier": "^4.1.1",
     "bootstrap": "^3.4.0",
     "core-js": "^2.5.4",
     "ngrx-store-freeze": "^0.2.4",

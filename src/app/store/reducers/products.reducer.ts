@@ -23,7 +23,7 @@ export const initialState: State = adapter.getInitialState({
 
 export function reducer(state = initialState, action: fromProductActions.ActionsUnion) {
   switch (action.type) {
-
+  
     case fromProductActions.ProductActionTypes.LOAD: {
       return { ...state, loading: true, loaded: false };
     }

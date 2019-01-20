@@ -13,11 +13,17 @@ import * as fromCard from '../../../app/store/reducers/card.reducer';
 import {ProductModel} from '../models/ProductModel';
 
 import * as fromStore from '../../../app/store/reducers';
+import {NotifierService} from 'angular-notifier';
 
 @Injectable()
 export class CardEffect {
 
-  constructor(private action$: Actions, private store$: Store<fromStore.State>, private order: OrderService) { }
+  constructor(
+    private action$: Actions,
+    private store$: Store<fromStore.State>,
+    private order: OrderService,
+    private notifier: NotifierService
+  ) { }
 
   @Effect()
   load$ = this.action$.pipe(
@@ -42,6 +48,9 @@ export class CardEffect {
 
               item.product = product;
 
+
+              this.notifier.notify('success', `${product.title} added to shopping card.`);
+
               return new fromCardActions.CardAddItemSuccess(item);
           }))
     })
@@ -59,6 +68,9 @@ export class CardEffect {
 
       return this.order.removeItem(card.id)
         .pipe(map(() => {
+
+
+          this.notifier.notify('warning', `${card.product.title} Product removed from shopping card.`);
 
           return new fromCardActions.CardRemoveItemSuccessAction(card);
 

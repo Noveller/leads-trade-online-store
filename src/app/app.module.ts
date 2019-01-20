@@ -16,6 +16,8 @@ import {RouterStateSerializer, StoreRouterConnectingModule} from '@ngrx/router-s
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import {environment} from '../environments/environment';
+import {NotifierModule} from 'angular-notifier';
+import {config} from './notifier.config';
 
 export const ROUTES: Routes = [
   { path: '', redirectTo: '/products', pathMatch: 'full' },
@@ -38,7 +40,9 @@ export const ROUTES: Routes = [
     EffectsModule.forRoot([...effects]),
     StoreModule.forRoot(TOKEN, { metaReducers }),
     StoreRouterConnectingModule,
-    !environment.production ? StoreDevtoolsModule.instrument() : []
+    !environment.production ? StoreDevtoolsModule.instrument() : [],
+
+    NotifierModule.withConfig(config)
   ],
   providers: [
     ...services,
